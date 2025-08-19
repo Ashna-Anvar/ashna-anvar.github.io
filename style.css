@@ -1,0 +1,227 @@
+/* -------- Global Reset -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* -------- Navbar -------- */
+.navbar {
+  background: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.navbar li { margin: 0; }
+.navbar a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.navbar a:hover {
+  background: #444;
+}
+
+/* -------- Sections -------- */
+section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #007BFF;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* -------- Hero -------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background: #fff;
+}
+.hero-content {
+  padding: 1rem;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-content p { margin-bottom: 0.8rem; }
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* -------- Cards -------- */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-top: 1rem;
+}
+
+/* -------- Profile -------- */
+#profile p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* -------- Projects -------- */
+.projects-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+}
+#projects .iframe-wrap iframe {
+  height: 500px;
+}
+
+.project-thumb {
+  width: 100px;
+  margin: 0.5rem;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+.project-thumb:hover {
+  border-color: #007BFF;
+}
+#project-details img {
+  margin: 0.8rem 0;
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+/* -------- Education -------- */
+#education ul {
+  list-style: none;
+  padding-left: 0;
+}
+#education li {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 4px solid #007BFF;
+}
+
+/* -------- CV -------- */
+#cv .btn {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+#cv .btn:hover {
+  background: #0056b3;
+}
+.iframe-wrap {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+.iframe-wrap iframe {
+  border: none;
+  width: 100%;
+  height: 400px;
+}
+
+/* -------- Weather -------- */
+.weather-container {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+.weather-container input {
+  flex: 1;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.weather-container button {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  background: #007BFF;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.weather-container button:hover {
+  background: #0056b3;
+}
+
+/* -------- Contact -------- */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#contact-form input,
+#contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#contact-form button {
+  width: fit-content;
+  padding: 0.8rem 1.5rem;
+  background: #007BFF;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+#contact-form button:hover {
+  background: #0056b3;
+}
+
+/* -------- Footer -------- */
+footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 1.2rem;
+  margin-top: 2rem;
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-image { margin-top: 1.5rem; }
+  .projects-layout {
+    grid-template-columns: 1fr;
+  }
+}
+

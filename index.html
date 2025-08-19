@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal portfolio website showcasing my skills and projects.">
+  <title>My Portfolio</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+  <!-- ===== Header & Navigation ===== -->
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#weather">Weather</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cv.pdf" download>Download CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero (Home) ===== -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Welcome!</h1>
+        <p id="greeting">Loading a greeting...</p>
+      </div>
+      <div class="hero-image">
+        <img src="images/profile.jpg" alt="Profile Picture">
+      </div>
+    </section>
+
+    <!-- ===== Profile ===== -->
+    <section id="profile">
+      <h2>About Me</h2>
+      <p>Hello! I’m <strong>Ashna Anvar</strong>, a passionate learner in Artificial Intelligence and Data Science. 
+      I enjoy building projects, solving real-world problems, and exploring new technologies.</p>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech in Artificial Intelligence and Data Science</strong> – Rajagiri School of Engineering and Technology (2023 – Present)</li>
+        <li><strong>Higher Secondary</strong> – [Your School Name], [Year]</li>
+        <li><strong>High School</strong> – [Your School Name], [Year]</li>
+      </ul>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-layout">
+        <div id="project-gallery">
+          <!-- Project thumbnails go here -->
+        </div>
+        <div id="project-details">
+          <p>Select a project to view details</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Weather ===== -->
+    <section id="weather">
+      <h2>Live Weather Information</h2>
+      <div class="weather-container">
+        <input type="text" id="city-input" placeholder="Enter a city name...">
+        <button id="get-weather-btn">Get Weather</button>
+      </div>
+      <div id="weather-display"></div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>Copyright © 2025 Ashna Anvar. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
